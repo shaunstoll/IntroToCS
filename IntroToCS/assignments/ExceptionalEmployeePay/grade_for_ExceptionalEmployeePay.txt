@@ -1,0 +1,31 @@
+Grade for assignment [StollUriel]: 9.5/10
+
+Am taking off a half point because you didn't flag an error at a line of input
+that contained <24.0> as the deduction.  The requirements state it must be
+"int", you're converting float to int and treating as valid input.
+
+Since reasonable people can disagree, not taking off a full point, but let's
+not argue about this one (unless you have a really compelling argument :-))
+
+***************************************************************************************
+                ID         Gross Pay         Taxes         Net Pay         Average Pay
+               00001       3208.00           481.20        2542.40           63.56
+               00002       2568.42           385.26        2034.74           59.50
+               00003       6435.24           965.29        5114.19           78.44
+Problem at line #4: hours worked must be at least 1.0
+Problem at line #5: hours worked must be at least 1.0
+Problem at line #6: deductions must be an integer between 1 and 34 (inclusive)
+Problem at line #7: deductions must be an integer between 1 and 34 (inclusive)
+Problem at line #8: net pay is negative
+               00009       3368.40           505.26        2670.72           63.59
+Problem at line #10: Could not parse Hours Worked ["42.0"] into valid input.
+Problem at line #11: Could not parse Wage Rate ["80.2"] into valid input.
+Problem at line #12: Could not parse deductions ["24"] into valid input.
+               00013       3368.40           505.26        2670.72           63.59
+Problem at line #14: Expected 4 tokens per line, found 6. Discarding input and advancing.
+               00015       3208.00           481.20        2542.40           63.56
+
+                        Total Gross Pay:   22156.46
+                            Total Taxes:   3323.47
+        Employee with Largest Gross Pay:   00003
+***************************************************************************************

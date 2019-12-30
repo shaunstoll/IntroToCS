@@ -1,0 +1,26 @@
+Grade for assignment [StollUriel]: 10/10
+
+
+building Student StollUriel assignment code base from directory /Users/avraham/YUGitRepos/1300/StollUriel/IntroToCompSci/assignments/InterfacedQuizGenerator
+*************************************
+Welcome to the addition integer arithmetic quiz!
+
+Question 1: What is 57 + 86 ? Question 2: What is 68 - 52 ? Question 3: What is 54 + 34 ? Question 4: What is 91 - 68 ? Question 5: What is 95 - 94 ? Question 6: What is 84 - 80 ? Question 7: What is 79 - 24 ? Question 8: What is 33 + 42 ? Question 9: What is 41 - 21 ? Question 10: What is 70 - 35 ? 
+Here are the correct answers:
+Question 1: What is 57 + 86 ?  Correct answer is 143  You said 1, which is INCORRECT.
+Question 2: What is 68 - 52 ?  Correct answer is 16  You said 2, which is INCORRECT.
+Question 3: What is 54 + 34 ?  Correct answer is 88  You said 3, which is INCORRECT.
+Question 4: What is 91 - 68 ?  Correct answer is 23  You said 4, which is INCORRECT.
+Question 5: What is 95 - 94 ?  Correct answer is 1  You said 5, which is INCORRECT.
+Question 6: What is 84 - 80 ?  Correct answer is 4  You said 6, which is INCORRECT.
+Question 7: What is 79 - 24 ?  Correct answer is 55  You said 7, which is INCORRECT.
+Question 8: What is 33 + 42 ?  Correct answer is 75  You said 8, which is INCORRECT.
+Question 9: What is 41 - 21 ?  Correct answer is 20  You said 9, which is INCORRECT.
+Question 10: What is 70 - 35 ?  Correct answer is 35  You said 10, which is INCORRECT.
+
+You got 0 question(s) correct.
+Your grade on the quiz is 0
+*************************************
+
+
+nice job, but why all-caps for non-static variables?!

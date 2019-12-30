@@ -1,0 +1,42 @@
+Grade for assignment [StollUriel]: 9/10
+
+Uri -- You handled all input lines correctly except this one from the
+first test below.
+
+>> 00008 2.0 15.0 34 TechSupport
+
+You treated this as legal, but it's illegal because "net pay must be positive -- -10.0".
+
+Please check my work :-), but am deducting 1 point for this error.  As
+we discussed, this is considered to be a very difficult assignment, so
+"congratulations".
+
+You handled the second test case nicely.
+
+Starting a test 
+
+***************************************************************************************
+Error: Duplicate of department 'Payroll' found. Discarding input and advancing.
+Problem at line #4: hours worked must be at least 1.0
+Problem at line #5: hours worked must be at least 1.0
+Problem at line #6: deductions must be an integer between 1 and 34 (inclusive)
+Problem at line #7: deductions must be an integer between 1 and 34 (inclusive)
+Problem at line #11: 'StealthDepartment' is an invalid department. Discarding input and advancing.
+
+          Department      # Employees     Total Gross Pay   Average Gross Pay
+             Payroll            1             3208.00             3208.00
+         TechSupport            4            13041.64             3260.41
+       DataModelling            1             2568.42             2568.42
+***************************************************************************************
+
+
+Starting a test 
+
+***************************************************************************************
+Error: Duplicate of department '9' found. Discarding input and advancing.
+Error: Duplicate of department '9' found. Discarding input and advancing.
+Error: Duplicate of department '9' found. Discarding input and advancing.
+Error: Duplicate of department '8' found. Discarding input and advancing.
+Error: Duplicate of department '7' found. Discarding input and advancing.
+Error: There cannot be more than 10 departments.
+***************************************************************************************

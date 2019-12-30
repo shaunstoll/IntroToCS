@@ -1,0 +1,38 @@
+Grade for assignment [StollUriel]: 10/10
+
+***************************************************************************************
+                ID         Gross Pay         Taxes         Net Pay         Average Pay
+               00001       3208.00           481.20        2542.40           63.56
+               00002       2568.42           385.26        2034.74           59.50
+               00003       6435.24           965.29        5114.19           78.44
+Problem at line #4: hours worked must be at least 1.0
+Problem at line #5: hours worked must be at least 1.0
+Problem at line #6: deductions must be an integer between 1 and 34 (inclusive)
+Problem at line #7: deductions must be an integer between 1 and 34 (inclusive)
+Problem at line #8: net pay is negative
+               00009       3368.40           505.26        2670.72           63.59
+
+                        Total Gross Pay:   15580.06
+                            Total Taxes:   2337.01
+        Employee with Largest Gross Pay:   00003
+***************************************************************************************
+
+
+***************************************************************************************
+                ID         Gross Pay         Taxes         Net Pay         Average Pay
+Problem at line #1: hours worked must be at least 1.0
+Problem at line #2: deductions must be an integer between 1 and 34 (inclusive)
+               00003       3208.00           481.20        2542.40           63.56
+               00004       2568.42           385.26        2034.74           59.50
+               00005       6435.24           965.29        5114.19           78.44
+Problem at line #6: hours worked must be at least 1.0
+Problem at line #7: deductions must be an integer between 1 and 34 (inclusive)
+Problem at line #8: deductions must be an integer between 1 and 34 (inclusive)
+Problem at line #9: net pay is negative
+               00010       3368.40           505.26        2670.72           63.59
+Problem at line #11: wage rate must be at least 15
+
+                        Total Gross Pay:   15580.06
+                            Total Taxes:   2337.01
+        Employee with Largest Gross Pay:   00005
+***************************************************************************************

@@ -1,2 +1,0 @@
-Grade for assignment [StollUriel]: 10/10
-Enter temperature in Celsius: 40.0 C = 104.0 F

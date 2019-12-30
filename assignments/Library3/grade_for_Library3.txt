@@ -1,0 +1,125 @@
+Grade for assignment [StollUriel]: 9/10
+
+take #1: same bug as in Library2.  Deducting one point this time.  Please fix and will regrade.
+
+building Student StollUriel assignment code base from directory /Users/avraham/YUGitRepos/1300/StollUriel/IntroToCompSci/assignments/Library3
+[ERROR] COMPILATION ERROR : 
+[ERROR] /Users/avraham/YUGitRepos/1300/StollUriel/IntroToCompSci/assignments/Library3/src/test/java/edu/yu/intro/test/TestPatron.java:[35,56] cannot find symbol
+  symbol:   method getAddress()
+  location: variable patron of type edu.yu.intro.Patron
+Grade for assignment [StollUriel]: /10
+building Student StollUriel assignment code base from directory /Users/avraham/YUGitRepos/1300/StollUriel/IntroToCompSci/assignments/Library3
+
+take #2: very nice work
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Test cases to execute : 5
+Running edu.yu.intro.test.Library3Test
+Execution Started : filterTest
+Execution Finished : filterTest
+Execution Started : nBooksTest
+Execution Finished : nBooksTest
+Execution Started : onLoanTest
+Execution Finished : onLoanTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in edu.yu.intro.test.Library3Test
+Running edu.yu.intro.test.TestBookFilter
+Execution Started : shouldNotHaveMatchedAuthorAndISBN
+Execution Finished : shouldNotHaveMatchedAuthorAndISBN
+Execution Started : shouldHaveMatchedAuthorAndISBN
+Execution Finished : shouldHaveMatchedAuthorAndISBN
+Execution Started : defaultFilterMatchesAnyBook
+Execution Finished : defaultFilterMatchesAnyBook
+Execution Started : testMatchFailsOnWrongISBN
+Execution Finished : testMatchFailsOnWrongISBN
+Execution Started : testMatchOnBookType
+Execution Finished : testMatchOnBookType
+Execution Started : ISBNMustBeValid
+Execution Finished : ISBNMustBeValid
+Execution Started : emptyTitleIsInvalid
+Execution Finished : emptyTitleIsInvalid
+Execution Started : bookTypeMustBeValid
+Execution Finished : bookTypeMustBeValid
+Execution Started : testMatchOnAuthor
+Execution Finished : testMatchOnAuthor
+Execution Started : testMatchFailsOnWrongBookType
+Execution Finished : testMatchFailsOnWrongBookType
+Execution Started : emptyAuthorIsInvalid
+Execution Finished : emptyAuthorIsInvalid
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.505 sec - in edu.yu.intro.test.TestBookFilter
+Running edu.yu.intro.test.TestBook
+Execution Started : ISBNMustBeValid
+Execution Finished : ISBNMustBeValid
+Execution Started : emptyTitleIsInvalid
+Execution Finished : emptyTitleIsInvalid
+Execution Started : bookTypeMustBeValid
+Execution Finished : bookTypeMustBeValid
+Execution Started : testEqualsAndHashcode
+Execution Finished : testEqualsAndHashcode
+Execution Started : testNotEquals
+Execution Finished : testNotEquals
+Execution Started : testVanillaConstructor
+[INFO ] 2019-05-10 10:00:41.408 [main] TestBook testVanillaConstructor - Created book edu.yu.intro.Book@3e82f7ae
+Execution Finished : testVanillaConstructor
+Execution Started : emptyAuthorIsInvalid
+Execution Finished : emptyAuthorIsInvalid
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in edu.yu.intro.test.TestBook
+Running edu.yu.intro.test.TestPatron
+Execution Started : emptyAddressIsInvalid
+Execution Finished : emptyAddressIsInvalid
+Execution Started : emptyLastNameIsInvalid
+Execution Finished : emptyLastNameIsInvalid
+Execution Started : testNotEquals
+Execution Finished : testNotEquals
+Execution Started : emptyFirstNameIsInvalid
+Execution Finished : emptyFirstNameIsInvalid
+Execution Started : testVanillaConstructor
+[INFO ] 2019-05-10 10:00:41.414 [main] TestPatron testVanillaConstructor - Created patron edu.yu.intro.Patron@36252261
+Execution Finished : testVanillaConstructor
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.yu.intro.test.TestPatron
+Running edu.yu.intro.test.TestLibrary
+Execution Started : sameBookCanBeBorrowedMultipleTimesConcurrentlyEvenIfThatMakesNoSense
+Execution Finished : sameBookCanBeBorrowedMultipleTimesConcurrentlyEvenIfThatMakesNoSense
+Execution Started : onLoanOnlyIfPatronIsMemberOfLibrary
+Execution Finished : onLoanOnlyIfPatronIsMemberOfLibrary
+Execution Started : testNoBooksOnLoanToPatron
+Execution Finished : testNoBooksOnLoanToPatron
+Execution Started : addAndSearchForBooks
+Execution Finished : addAndSearchForBooks
+Execution Started : canBorrowBookOnlyIfAddedToLibrary
+Execution Finished : canBorrowBookOnlyIfAddedToLibrary
+Execution Started : canBorrowOnlyIfLibraryMember
+Execution Finished : canBorrowOnlyIfLibraryMember
+Execution Started : testEqualAndHashcode
+Execution Finished : testEqualAndHashcode
+Execution Started : testAddingAndSearchingPatrons
+Execution Finished : testAddingAndSearchingPatrons
+Execution Started : emptyAddressIsInvalid
+Execution Finished : emptyAddressIsInvalid
+Execution Started : testBooksOnLoanToPatron
+[INFO ] 2019-05-10 10:00:41.423 [main] TestLibrary testBooksOnLoanToPatron - Patron edu.yu.intro.Patron@4a9250e1 is borrowing book edu.yu.intro.Book@3615c865
+[INFO ] 2019-05-10 10:00:41.423 [main] TestLibrary testBooksOnLoanToPatron - Patron edu.yu.intro.Patron@4a9250e1 is borrowing book edu.yu.intro.Book@3a4cd8b5
+Execution Finished : testBooksOnLoanToPatron
+Execution Started : emptyPhoneNumberIsInvalid
+Execution Finished : emptyPhoneNumberIsInvalid
+Execution Started : exerciseDriverScenario
+Execution Finished : exerciseDriverScenario
+Execution Started : emptyNameIsInvalid
+Execution Finished : emptyNameIsInvalid
+Execution Started : newLibraryScenario
+Execution Finished : newLibraryScenario
+Execution Started : testNotEquals
+Execution Finished : testNotEquals
+Execution Started : testVanillaConstructor
+[INFO ] 2019-05-10 10:00:41.427 [main] TestLibrary testVanillaConstructor - Created library {class edu.yu.intro.Library[name=Finkelstein Memorial Library Central Library, address=24 W Rte 59, Spring Valley, NY 10977, phone number=(845) 352-5700]}
+Execution Finished : testVanillaConstructor
+Execution Started : multipleCopiesOfBooksCanBeAddedAndBorrowed
+Execution Finished : multipleCopiesOfBooksCanBeAddedAndBorrowed
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in edu.yu.intro.test.TestLibrary
+Test cases executed : 43
+
+Results :
+
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0
+

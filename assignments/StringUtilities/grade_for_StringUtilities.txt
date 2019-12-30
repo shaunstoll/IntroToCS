@@ -1,0 +1,278 @@
+Grade for assignment [StollUriel]: 7/10
+
+take #2: After your code fix for isBlank(), reran test suite, ran to completion with this report (below)
+
+Tests run: 45, Failures: 8, Errors: 4, Skipped: 0, Time elapsed: 0.388 sec <<< FAILURE! - in edu.yu.intro.test.StringUtilsTest
+
+A few of these errors came from your handling "null" input overly
+agressively and throwing an Exception "object cannot be null".  Quite
+a few others were different semantic errors in implementing the
+requirements.
+
+Deducting two more points for this run.
+
+
+take #1:  your implementation of "isBlank" threw an exception and crashed the tests.  Per requirements:
+
+"Is a String “blank”?
+
+Return false iﬀ the input’s length is non-zero and the string contains at least one “non white-space” character, true otherwise.
+
+Your approach:
+
+		try {
+			if (str.length() == 0) {isBlank = false;}
+		}
+		catch (NullPointerException e) {
+			System.out.println("String cannot be null.");
+			System.exit(0);
+		}
+
+is incorrect because 1) doesn't meet requirements 2) you never, never,
+crash with a System.exit(): you might have just killed 4 astronauts
+with that approach (discuss face to face if you want).  Deducting one
+point, and giving you a chance to fix so I can resume grading your
+assignment.
+
+Deducting -1: for this error, grade pending.  You must fix by 8pm tonight.
+
+
+
+building Student StollUriel assignment code base from directory /Users/avraham/YUGitRepos/1300/StollUriel/IntroToCompSci/assignments/StringUtilities
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Test cases to execute : 1
+Running edu.yu.intro.test.StringUtilsTest
+Execution Started : spacesAreTrimmedUntilEmpty
+Execution Finished : spacesAreTrimmedUntilEmpty
+Execution Started : vanillaJoin
+Execution Finished : vanillaJoin
+Execution Started : joinedEmptyArrayIsEmptyString
+Execution Failure : java.lang.RuntimeException: The Object cannot be null.
+Execution Finished : joinedEmptyArrayIsEmptyString
+Execution Started : joinedArrayContainingNullIsEmptyString
+Execution Failure : java.lang.RuntimeException: The Object cannot be null.
+Execution Finished : joinedArrayContainingNullIsEmptyString
+Execution Started : illegalToTestPalindromityOnNull
+Execution Finished : illegalToTestPalindromityOnNull
+Execution Started : trailingSpacesAreTrimmed
+Execution Finished : trailingSpacesAreTrimmed
+Execution Started : vanillaRemoveSucceeds
+Execution Finished : vanillaRemoveSucceeds
+Execution Started : illegalToExtractExtensionOnNullInput
+Execution Finished : illegalToExtractExtensionOnNullInput
+Execution Started : NullIsNotEqualToABC
+Execution Failure : java.lang.NullPointerException
+Execution Finished : NullIsNotEqualToABC
+Execution Started : testVanillaExtractExtension
+Execution Finished : testVanillaExtractExtension
+Execution Started : ignoreWhenAlreadyThatLong
+Execution Failure : org.junit.ComparisonFailure: expected:<[]bob> but was:<[   ]bob>
+Execution Finished : ignoreWhenAlreadyThatLong
+Execution Started : ABCNotEqualToNull
+Execution Finished : ABCNotEqualToNull
+Execution Started : nullIsBlank
+String cannot be null.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Test cases to execute : 1
+Running edu.yu.intro.test.StringUtilsTest
+Execution Started : spacesAreTrimmedUntilEmpty
+Execution Finished : spacesAreTrimmedUntilEmpty
+Execution Started : vanillaJoin
+Execution Finished : vanillaJoin
+Execution Started : joinedEmptyArrayIsEmptyString
+Execution Failure : java.lang.RuntimeException: The Object cannot be null.
+Execution Finished : joinedEmptyArrayIsEmptyString
+Execution Started : joinedArrayContainingNullIsEmptyString
+Execution Failure : java.lang.RuntimeException: The Object cannot be null.
+Execution Finished : joinedArrayContainingNullIsEmptyString
+Execution Started : illegalToTestPalindromityOnNull
+Execution Finished : illegalToTestPalindromityOnNull
+Execution Started : trailingSpacesAreTrimmed
+Execution Finished : trailingSpacesAreTrimmed
+Execution Started : vanillaRemoveSucceeds
+Execution Finished : vanillaRemoveSucceeds
+Execution Started : illegalToExtractExtensionOnNullInput
+Execution Finished : illegalToExtractExtensionOnNullInput
+Execution Started : NullIsNotEqualToABC
+Execution Failure : java.lang.NullPointerException
+Execution Finished : NullIsNotEqualToABC
+Execution Started : testVanillaExtractExtension
+Execution Finished : testVanillaExtractExtension
+Execution Started : ignoreWhenAlreadyThatLong
+Execution Failure : org.junit.ComparisonFailure: expected:<[]bob> but was:<[   ]bob>
+Execution Finished : ignoreWhenAlreadyThatLong
+Execution Started : ABCNotEqualToNull
+Execution Finished : ABCNotEqualToNull
+Execution Started : nullIsBlank
+Execution Failure : java.lang.IllegalArgumentException: String cannot be null.
+Execution Finished : nullIsBlank
+Execution Started : trimmedEmptyIsEmpty
+Execution Finished : trimmedEmptyIsEmpty
+Execution Started : spaceIsNotEmpty
+Execution Finished : spaceIsNotEmpty
+Execution Started : ABCEqualsABC
+Execution Finished : ABCEqualsABC
+Execution Started : testVanillaLeftPad
+Execution Failure : org.junit.ComparisonFailure: expected:<  []bob> but was:<  [   ]bob>
+Execution Finished : testVanillaLeftPad
+Execution Started : removeDoesntRemoveWhatDoesntExist
+Execution Finished : removeDoesntRemoveWhatDoesntExist
+Execution Started : nullAndEmptyAreBothEmpty
+Execution Finished : nullAndEmptyAreBothEmpty
+Execution Started : nonStringsAreIncludedInJoin
+Execution Finished : nonStringsAreIncludedInJoin
+Execution Started : padTruncatedWhenTooBig
+Execution Failure : org.junit.ComparisonFailure: expected:<                 []bob> but was:<                 [   ]bob>
+Execution Finished : padTruncatedWhenTooBig
+Execution Started : testIsPalindrome
+
+
+
+c
+racecar
+LiveontimeemitnoeviL
+excellent
+Liveontime,emitnoeviL
+Execution Failure : java.lang.AssertionError: is NOT a palindrome phrase
+Execution Finished : testIsPalindrome
+Execution Started : illegalToJoinNull
+Execution Finished : illegalToJoinNull
+Execution Started : withNoDotInInputExtractExtensionReturnsEmptyString
+Execution Finished : withNoDotInInputExtractExtensionReturnsEmptyString
+Execution Started : cantRemoveFromEmpty
+Execution Finished : cantRemoveFromEmpty
+Execution Started : charsArentTrimmed
+Execution Finished : charsArentTrimmed
+Execution Started : TwoNullsAreEquals
+Execution Finished : TwoNullsAreEquals
+Execution Started : stringWithEmbeddedSpacesAndVanillaCharsIsNotEmpty
+Execution Finished : stringWithEmbeddedSpacesAndVanillaCharsIsNotEmpty
+Execution Started : ignoreWhenPadIsNegative
+Execution Finished : ignoreWhenPadIsNegative
+Execution Started : abcNotEqualToABC
+Execution Finished : abcNotEqualToABC
+Execution Started : okToExtractExtensionFromFilenameWithEmbeddedSpaces
+Execution Failure : org.junit.ComparisonFailure: expected:<[ ]txt> but was:<[]txt>
+Execution Finished : okToExtractExtensionFromFilenameWithEmbeddedSpaces
+Execution Started : illegalToExtractExtensionWithMultipleDotsInInput
+Execution Finished : illegalToExtractExtensionWithMultipleDotsInInput
+Execution Started : leadingSpacesAreTrimmed
+Execution Finished : leadingSpacesAreTrimmed
+Execution Started : trimmedNullIsEmpty
+Execution Failure : java.lang.AssertionError: expected:<> but was:<null>
+Execution Finished : trimmedNullIsEmpty
+Execution Started : cantRemoveFromNull
+Execution Finished : cantRemoveFromNull
+Execution Started : leadingAndTrailingSpacesAreTrimmed
+Execution Finished : leadingAndTrailingSpacesAreTrimmed
+Execution Started : spaceIsBlank
+Execution Finished : spaceIsBlank
+Execution Started : nullCantBeLeftPadded
+Execution Finished : nullCantBeLeftPadded
+Execution Started : emptyCanBeLeftPadded
+Execution Finished : emptyCanBeLeftPadded
+Execution Started : ignoreWhenPadShorterThanString
+Execution Finished : ignoreWhenPadShorterThanString
+Execution Started : nullAndEmptyStringsAreIgnoredInJoin
+Execution Finished : nullAndEmptyStringsAreIgnoredInJoin
+Execution Started : emptyIsBlank
+Execution Failure : java.lang.AssertionError
+Execution Finished : emptyIsBlank
+Execution Started : stringWithVanillaCharsIsntBlank
+Execution Failure : java.lang.AssertionError
+Execution Finished : stringWithVanillaCharsIsntBlank
+Execution Started : embeddedSpacesAreNotTrimmed
+Execution Finished : embeddedSpacesAreNotTrimmed
+Execution Started : stringWithVanillaCharsIsNotEmpty
+Execution Finished : stringWithVanillaCharsIsNotEmpty
+Tests run: 45, Failures: 8, Errors: 4, Skipped: 0, Time elapsed: 0.388 sec <<< FAILURE! - in edu.yu.intro.test.StringUtilsTest
+joinedEmptyArrayIsEmptyString(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.RuntimeException: The Object cannot be null.
+	at edu.yu.intro.test.StringUtilsTest.joinedEmptyArrayIsEmptyString(StringUtilsTest.java:138)
+
+joinedArrayContainingNullIsEmptyString(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.RuntimeException: The Object cannot be null.
+	at edu.yu.intro.test.StringUtilsTest.joinedArrayContainingNullIsEmptyString(StringUtilsTest.java:145)
+
+NullIsNotEqualToABC(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at edu.yu.intro.test.StringUtilsTest.NullIsNotEqualToABC(StringUtilsTest.java:112)
+
+ignoreWhenAlreadyThatLong(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]bob> but was:<[   ]bob>
+	at edu.yu.intro.test.StringUtilsTest.ignoreWhenAlreadyThatLong(StringUtilsTest.java:178)
+
+nullIsBlank(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalArgumentException: String cannot be null.
+	at edu.yu.intro.test.StringUtilsTest.nullIsBlank(StringUtilsTest.java:87)
+
+testVanillaLeftPad(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<  []bob> but was:<  [   ]bob>
+	at edu.yu.intro.test.StringUtilsTest.testVanillaLeftPad(StringUtilsTest.java:183)
+
+padTruncatedWhenTooBig(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<                 []bob> but was:<                 [   ]bob>
+	at edu.yu.intro.test.StringUtilsTest.padTruncatedWhenTooBig(StringUtilsTest.java:203)
+
+testIsPalindrome(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: is NOT a palindrome phrase
+	at edu.yu.intro.test.StringUtilsTest.testIsPalindrome(StringUtilsTest.java:28)
+
+okToExtractExtensionFromFilenameWithEmbeddedSpaces(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[ ]txt> but was:<[]txt>
+	at edu.yu.intro.test.StringUtilsTest.okToExtractExtensionFromFilenameWithEmbeddedSpaces(StringUtilsTest.java:56)
+
+trimmedNullIsEmpty(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<> but was:<null>
+	at edu.yu.intro.test.StringUtilsTest.trimmedNullIsEmpty(StringUtilsTest.java:208)
+
+emptyIsBlank(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+	at edu.yu.intro.test.StringUtilsTest.emptyIsBlank(StringUtilsTest.java:92)
+
+stringWithVanillaCharsIsntBlank(edu.yu.intro.test.StringUtilsTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError
+	at edu.yu.intro.test.StringUtilsTest.stringWithVanillaCharsIsntBlank(StringUtilsTest.java:102)
+
+Test cases executed : 45
+
+Results :
+
+Failed tests: 
+  StringUtilsTest.emptyIsBlank:92
+  StringUtilsTest.ignoreWhenAlreadyThatLong:178 expected:<[]bob> but was:<[   ]bob>
+  StringUtilsTest.okToExtractExtensionFromFilenameWithEmbeddedSpaces:56 expected:<[ ]txt> but was:<[]txt>
+  StringUtilsTest.padTruncatedWhenTooBig:203 expected:<                 []bob> but was:<                 [   ]bob>
+  StringUtilsTest.stringWithVanillaCharsIsntBlank:102
+  StringUtilsTest.testIsPalindrome:28 is NOT a palindrome phrase
+  StringUtilsTest.testVanillaLeftPad:183 expected:<  []bob> but was:<  [   ]bob>
+  StringUtilsTest.trimmedNullIsEmpty:208 expected:<> but was:<null>
+Tests in error: 
+  StringUtilsTest.NullIsNotEqualToABC:112 » NullPointer
+  StringUtilsTest.joinedArrayContainingNullIsEmptyString:145 » Runtime The Objec...
+  StringUtilsTest.joinedEmptyArrayIsEmptyString:138 » Runtime The Object cannot ...
+  StringUtilsTest.nullIsBlank:87 » IllegalArgument String cannot be null.
+
+Tests run: 45, Failures: 8, Errors: 4, Skipped: 0
+
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project StringUtilities: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/avraham/YUGitRepos/1300/StollUriel/IntroToCompSci/assignments/StringUtilities/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

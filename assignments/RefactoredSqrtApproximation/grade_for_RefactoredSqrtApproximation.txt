@@ -1,0 +1,39 @@
+Grade for assignment [StollUriel]: 10 /10 (nice!)
+
+building Student StollUriel assignment code base from directory /Users/avraham/YUGitRepos/1300/StollUriel/IntroToCompSci/assignments/RefactoredSqrtApproximation
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Test cases to execute : 2
+Running edu.yu.intro.test.SqrtApproximationTest
+Execution Started : calculateSquareRootsInputCantBeNegative
+*************************************************
+Execution Finished : calculateSquareRootsInputCantBeNegative
+Execution Started : calculateSquareRootsMinimalLength
+Execution Finished : calculateSquareRootsMinimalLength
+Execution Started : calculateSquareRootsHappyPaths
+Execution Finished : calculateSquareRootsHappyPaths
+Execution Started : sqrt0
+Execution Finished : sqrt0
+Execution Started : sqrt2
+Execution Finished : sqrt2
+Execution Started : sqrtRootCalculationInputCantBeNegative
+*************************************************
+Execution Finished : sqrtRootCalculationInputCantBeNegative
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in edu.yu.intro.test.SqrtApproximationTest
+Running edu.yu.intro.RefactoredSqrtApproximationTest
+Execution Started : sqrt2_5
+Execution Finished : sqrt2_5
+Execution Started : negativeInputRejected
+*************************************************
+Execution Finished : negativeInputRejected
+Execution Started : sqrt0toN
+Execution Finished : sqrt0toN
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.yu.intro.RefactoredSqrtApproximationTest
+Test cases executed : 9
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+

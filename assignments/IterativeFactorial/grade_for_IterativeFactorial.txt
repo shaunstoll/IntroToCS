@@ -1,0 +1,26 @@
+Grade for assignment [StollUriel]: 10/10
+
+Uri -- consider using "scientific notation" next time.  Examples below:
+
+
+
+
+15
+Enter 'n' -- I will calculate factorial(n): *************************************************
+factorial(15) = 1,307,674,368,000
+*************************************************
+
+>> 1.307674368 E+12
+
+
+20
+Enter 'n' -- I will calculate factorial(n): *************************************************
+factorial(20) = 2,432,902,008,176,640,000
+*************************************************
+
+>> 2.432902008 E+18
+
+5
+Enter 'n' -- I will calculate factorial(n): *************************************************
+factorial(5) = 120
+*************************************************

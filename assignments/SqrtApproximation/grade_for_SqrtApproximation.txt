@@ -1,0 +1,23 @@
+Grade for assignment [StollUriel]: 10/10
+
+
+72.0
+Enter ‘a‘ -- I will approxiate ‘sqrt(a)‘: 
+*************************************************
+sqrt(72.000) = 8.485 after 6 iteration(s): [difference from Math.sqrt = 0.00000000]
+*************************************************
+
+
+-3
+Enter ‘a‘ -- I will approxiate ‘sqrt(a)‘: 
+*************************************************
+sqrt(-3.000)
+Error: you must enter a number greater than or equal to 0.00001
+*************************************************
+
+
+0.01
+Enter ‘a‘ -- I will approxiate ‘sqrt(a)‘: 
+*************************************************
+sqrt(0.010) = 0.100 after 8 iteration(s): [difference from Math.sqrt = 0.00000000]
+*************************************************
